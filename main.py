@@ -33,9 +33,33 @@ reversed_my_list = list(reversed(my_list))
 print(reversed_my_list)
       
 
-
 # Problem 2
-# Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
+        # create dictionary 
+person= dict({'name': 'john', 'age': 30, 'job': 'teacher'})
+
+        #print vlaue for job
+for value,key in job.items():
+    if key == job :
+         print(teacher)
+
+        # added a new key-pair
+person= dict({'name': 'john', 'age': 30, 'job': 'teacher'})
+print(&quot;Current Dict is: &quot;, person) 
+
+dict['name'] = 'john'
+dict['age'] = '30'
+dict['job'] = 'teacher'
+dict['city'] = 'paris'
+print(&quot;Updated Dict is: &quot;, person)
+
+        # removed key-pair
+ del me['age']
+print("The dictionary after remove is : ", person)
+
+        # itirate on sperate lines 
+person= dict({'name': 'john', 'age': 30, 'job': 'teacher'})
+for key, value in person.items():
+    print(f"Key: {key}, Value: {value}")
 
 # -----------------------------------------------------------------------------
 
