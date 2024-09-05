@@ -2,7 +2,37 @@
 
 # Lab 1
 # Problem 1
-# Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
+my_list = [1, 5, 'apple', 20.5]
+
+        # index print apple 
+def search_elements(lst: list[int]) -> int:
+     """Searching for an element in the list."""
+      if 'apple' in lst:
+          return lst.index('apple')
+      else:
+          return -1
+print(sreach_elements(['apple']))
+
+        # append 10
+def add_elements(lst: list[int]) -> list[int]:
+       """Adding elements to the list."""
+       lst.append(10)
+       return lst
+print(add_elements([10]))
+
+       # remove 20.5
+def remove_elements(lst: list[int]) -> list[int]:
+      """Removing elements from the list."""
+       lst.remove(20.5)
+      return lst
+print(remove_elements([20.5])
+      
+      # reversing the list
+reversed_my_list = list(reversed(my_list))
+#printing the list
+print(reversed_my_list)
+      
+
 
 # Problem 2
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
