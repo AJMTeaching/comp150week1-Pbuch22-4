@@ -79,17 +79,39 @@ def test(did_pass):
 # Function 1: count_vowels
 def count_vowels(s: str) -> int:
     """
-    Count the number of vowels in a string.
+// program to count the number of vowels in a string
 
-    Parameters:
-    - s (str): The input string
+// defining vowels
+const vowels = ["a", "e", "i", "o", "u"]
+
+function countVowel(str) {
+    // initialize count
+    let count = 0;
+
+    // loop through string to test if each character is a vowel
+    for (let letter of str.toLowerCase()) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+
+    // return number of vowels
+    return count
+}
+
+// take input
+const string = "lets try this" ;
+
+const result = countVowel(string);
+
+console.log(result);
 
     Returns:
     - int: The number of vowels in the string
     """
+
     # TODO: Implement this function
     pass
-
 
 # Unit Tests for count_vowels
 def test_count_vowels():
@@ -109,17 +131,26 @@ def test_count_vowels():
 def merge_lists(list1: list, list2: list) -> list:
     """
     Merge two sorted lists into a single sorted list.
-
+# using heapq.merge()
+ 
+# printing original lists
+print("The original list 1 is : " + str(test_list1))
+print("The original list 2 is : " + str(test_list2))
+ 
     Parameters:
-    - list1 (list): The first sorted list
-    - list2 (list): The second sorted list
+test_list1 = [8, 7, 6, 10, 5]
+test_list2 = [1, 6, 9, 3, 11]
 
     Returns:
     - list: A new sorted list containing all elements from list1 and list2
+res = list(merge(test_list1, test_list2))
+
+# printing result
+print("The combined sorted list is : " + str(res))
+
     """
     # TODO: Implement this function
     pass
-
 
 # Unit Tests for merge_lists
 def test_merge_lists():
@@ -143,7 +174,7 @@ def word_lengths(words: list) -> list:
     Get the lengths of words in a list.
 
     Parameters:
-    - words (list): The list of words
+    string_list= [ "hello", "world", "this", "is", "python"] 
 
     Returns:
     - list: A list containing the lengths of the words
