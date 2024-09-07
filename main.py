@@ -174,7 +174,8 @@ def word_lengths(words: list) -> list:
     Get the lengths of words in a list.
 
     Parameters:
-    string_list= [ "hello", "world", "this", "is", "python"] 
+    string_list= [ "hello", "world", "this", "is", "python"]
+    print(len(string_list))
 
     Returns:
     - list: A list containing the lengths of the words
@@ -198,13 +199,21 @@ def test_word_lengths():
 # Function 4: reverse_string
 def reverse_string(s: str) -> str:
     """
-    Reverse a string.
-
-    Parameters:
+       Parameters:
     - s (str): The input string
+    Reverse a string.
+original_string = "I, hate, pineapple"
+reversed_string = ''
+index = len(original_string) - 1
+
+while index >= 0:
+  reversed_string += original_string[index]
+  index -= 1
 
     Returns:
     - str: The reversed string
+print("Original String:", original_string)
+print("Reversed String:", reversed_string)
     """
     # TODO: Implement this function
     pass
@@ -227,13 +236,18 @@ def test_reverse_string():
 def intersection(list1: list, list2: list) -> list:
     """
     Find the intersection of two lists.
+    
+def intersection(lst1, lst2):
+    lst3 = [value for value in lst1 if value in lst2]
+    return lst3
 
-    Parameters:
-    - list1 (list): The first list
-    - list2 (list): The second list
+# Driver Code
+lst1 = [10, 11, 12, 13, 14, 15, 16, 17, 18]
+lst2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
     Returns:
     - list: The intersection of the two lists
+    print(intersection(lst1, lst2))
     """
     # TODO: Implement this function
     pass
